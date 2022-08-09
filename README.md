@@ -8,6 +8,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Google CDN](#google-cdn)
 - [Syntax](#basic-syntax)
 - [Advance Selectors](#advance-selectors)
+- [Mouse Events](#mouse-events)
 
 ## What is jQuery?
 
@@ -89,4 +90,41 @@ The jQuery library contains the following features:
     </tbody>
 </table>
 
+### Mouse Events
 
+<table>
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Event Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>click()</td>
+            <td>When click target element this method work</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>dblclick()</td>
+            <td>When double click element this method work </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>contextmenu()</td>
+            <td>When right click mouse this method work</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>mouseenter()</td>
+            <td>When You mouse enter target element then this event work</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>mouseleave()</td>
+            <td>When You mouse leave target element then this event work</td>
+        </tr>
+    </tbody>
+</table>
