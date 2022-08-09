@@ -5,6 +5,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 ## Table of Contents
 
 - [Introduction](#introduction)
+ - [Syntax](#basic-syntax)
 
 ## What is jQuery?
 
@@ -26,3 +27,16 @@ The jQuery library contains the following features:
     <li>AJAX</li>
     <li>Utilities</li>
 </ul>
+
+### Basic Syntax
+
+<pre>
+<code>
+    $(document).ready(function(){
+
+        // jQuery methods go here...
+
+    });
+</code>
+</pre>
+
