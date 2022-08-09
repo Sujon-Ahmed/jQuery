@@ -5,8 +5,9 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Google-CDN](#google-cdn)
+- [Google CDN](#google-cdn)
 - [Syntax](#basic-syntax)
+- [Advance Selectors](#advance-selectors)
 
 ## What is jQuery?
 
@@ -29,7 +30,7 @@ The jQuery library contains the following features:
     <li>Utilities</li>
 </ul>
 
-## Google CDN
+### Google CDN
 <code>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</code>
 
 ### Basic Syntax
@@ -43,4 +44,49 @@ The jQuery library contains the following features:
     });
 </code>
 </pre>
+
+### Advance Selectors
+
+<table>
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Selector</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>$("*")</td>
+            <td>"*" is a universal operator</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$("ul li")</td>
+            <td>Here ul is parent and li is child </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$(".abc, .xyz")</td>
+            <td>Multiple Classes</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>$("h1, div, p")</td>
+            <td>Multiple Tags</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>$("p:first")</td>
+            <td>Page first p element</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>$("p:last")</td>
+            <td>Page last p element</td>
+        </tr>
+    </tbody>
+</table>
+
 
