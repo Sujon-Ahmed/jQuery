@@ -5,7 +5,8 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 ## Table of Contents
 
 - [Introduction](#introduction)
- - [Syntax](#basic-syntax)
+- [Google-CDN](#google-cdn)
+- [Syntax](#basic-syntax)
 
 ## What is jQuery?
 
@@ -27,6 +28,9 @@ The jQuery library contains the following features:
     <li>AJAX</li>
     <li>Utilities</li>
 </ul>
+
+## Google CDN
+<code>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</code>
 
 ### Basic Syntax
 
