@@ -10,6 +10,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Advance Selectors](#advance-selectors)
 - [Mouse Events](#mouse-events)
 - [Keyboard Events](#keyboard-events)
+- [Form Events](#form-events)
 
 ## What is jQuery?
 
@@ -155,6 +156,45 @@ The jQuery library contains the following features:
             <td>3</td>
             <td>keydown()</td>
             <td>When pressing any keyboard key and getting up your finger on the key then this event run!</td>
+        </tr>
+    </tbody>
+</table>
+
+### Form Events
+
+<table>
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Event Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>focus()</td>
+            <td>When clicked any form feild this event worked!</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>blur()</td>
+            <td>When focus out target form feild this event worked!</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>change()</td>
+            <td>When change any select option then change() event worked!</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>select()</td>
+            <td>If select form feild any text or data then select() method worked!</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>submit()</td>
+            <td>Submit() method worked when any form submited!</td>
         </tr>
     </tbody>
 </table>
