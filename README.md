@@ -9,6 +9,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Syntax](#basic-syntax)
 - [Advance Selectors](#advance-selectors)
 - [Mouse Events](#mouse-events)
+- [Keyboard Events](#keyboard-events)
 
 ## What is jQuery?
 
@@ -125,6 +126,35 @@ The jQuery library contains the following features:
             <td>5</td>
             <td>mouseleave()</td>
             <td>When You mouse leave target element then this event work</td>
+        </tr>
+    </tbody>
+</table>
+
+### Keyboard Events
+
+<table>
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Event Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>keypress()</td>
+            <td>When pressing any keyboard key this event works perfectly 😍</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>keyup()</td>
+            <td>When pressing any keyboard key with clicked and down the finger, hold key this event fired! </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>keydown()</td>
+            <td>When pressing any keyboard key and getting up your finger on the key then this event run!</td>
         </tr>
     </tbody>
 </table>
