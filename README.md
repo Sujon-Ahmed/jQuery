@@ -4,7 +4,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 
 ## Table of Contents
 
-- [Introduction](#introduction)
+- [Introduction](#what-is-jquery)
 - [Google CDN](#google-cdn)
 - [Syntax](#basic-syntax)
 - [Advance Selectors](#advance-selectors)
