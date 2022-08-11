@@ -11,6 +11,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Mouse Events](#mouse-events)
 - [Keyboard Events](#keyboard-events)
 - [Form Events](#form-events)
+- [Window Events](#window-events)
 
 ## What is jQuery?
 
@@ -195,6 +196,40 @@ The jQuery library contains the following features:
             <td>5</td>
             <td>submit()</td>
             <td>Submit() method worked when any form submited!</td>
+        </tr>
+    </tbody>
+</table>
+
+### Window Events
+
+<table>
+    <thead>
+        <tr>
+            <th>Sl</th>
+            <th>Event Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>scroll()</td>
+            <td>When you scroll window screen then scroll() method worked!</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>resize()</td>
+            <td>When you resize window screen then resize() method worked!</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>load()</td>
+            <td>! load() method remove jq version > 3, Now it's replace document.ready()</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>unload()</td>
+            <td>! unload() method remove jq version > 3</td>
         </tr>
     </tbody>
 </table>
