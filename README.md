@@ -13,6 +13,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Form Events](#form-events)
 - [Window Events](#window-events)
 - [Get Method](#get-method)
+- [Class Methods](#class-methods)
 
 ## What is jQuery?
 
@@ -269,4 +270,30 @@ The jQuery library contains the following features:
     </tbody>
 </table>
 
-
+### Class Methods
+<table>
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Event Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>addClass()</td>
+            <td>When you any class in target element then use addClass()</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>removeClass()</td>
+            <td>When you any remove class in target element then use removeClass()</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>toggleClass()</td>
+            <td>toggleClass() are use when toggle target element class.</td>
+        </tr>
+    </tbody>
+</table>
