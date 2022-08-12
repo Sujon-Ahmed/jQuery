@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Method</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box {
+            margin: 20px;
+            background-color: royalblue;
+            width: 400px;
+            height: 150px;
+            padding: 10px;
+            color: #fff;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        #btn {
+            margin: 0 20px;
+            width: 80px;
+            height: 30px;
+            border: none;
+            outline: none;
+            background-color: royalblue;
+            color: #fff;
+            cursor: pointer;
+        }
+        .color-full {
+            color: rgb(121, 12, 131);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem aspernatur officia eveniet. Ab
+            accusantium quam cum quasi iusto officia.</p>
+    </div>
+    <button type="button" id="btn">Set Value</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function (e) { 
+                e.preventDefault();
+                $('#box h2').text('This is Simple Heading');
+                $('#box p').html('This is <b>Simple</b> description');
+                $('#box h2').attr('class', 'color-full')
+            });
+        });
+    </script>
+</body>
+
+</html>
