@@ -12,6 +12,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Keyboard Events](#keyboard-events)
 - [Form Events](#form-events)
 - [Window Events](#window-events)
+- [Get Method](#get-method)
 
 ## What is jQuery?
 
@@ -233,3 +234,39 @@ The jQuery library contains the following features:
         </tr>
     </tbody>
 </table>
+
+### Get method
+
+<table>
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Event Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>text()</td>
+            <td>When you get only element text then you can use text()</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>html()</td>
+            <td>When you can get html() structure of target element then use html() method.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>attr()</td>
+            <td>attr() use when you can see target element classes, ids, tags etc.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>val()</td>
+            <td>When you need target element value then you can use val() method.</td>
+        </tr>
+    </tbody>
+</table>
+
+
