@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ Height & Width</title>
+    <style>
+        #box {
+            border: 10px solid #000;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="content1">
+            <h4 id="width"></h4>
+            <h4 id="innerWidth"></h4>
+            <h4 id="outerWidth"></h4>
+            <h4 id="outerWidthTrue"></h4>
+        </div>
+        <div id="content2">
+            <h4 id="Height"></h4>
+            <h4 id="innerHeight"></h4>
+            <h4 id="outerHeight"></h4>
+            <h4 id="outerHeightTrue"></h4>
+        </div>
+    </div>
+    <button type="button" id="widthBtn">Width</button>
+    <button type="button" id="heightBtn">Height</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#widthBtn').click(function (e) { 
+                e.preventDefault();
+                $('#width').html("Width : " + $('#box').width());
+                $('#innerWidth').html("InnerWidth : " + $('#box').innerWidth());
+                $('#outerWidth').html("OuterWidth : " + $('#box').outerWidth());
+                $('#outerWidthTrue').html("OuterWidth(true) : " + $('#box').outerWidth(true));
+            });
+            $('#heightBtn').click(function (e) { 
+                e.preventDefault();
+                $('#Height').html("Height : " + $('#box').height());
+                $('#innerHeight').html("InnerHeight : " + $('#box').innerHeight());
+                $('#outerHeight').html("OuterHeight : " + $('#box').outerHeight());
+                $('#outerHeightTrue').html("OuterHeight(true) : " + $('#box').outerHeight(true));
+            });
+        });
+    </script>
+</body>
+</html>

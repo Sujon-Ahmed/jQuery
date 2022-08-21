@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wrapAll & wrapInner</title>    
+    <title>wrapAll & wrapInner</title>
     <style>
         #wrapAll {
             color: royalblue;
         }
+
         #wrapInner {
             color: mediumaquamarine;
         }
-    </style>      
+    </style>
 </head>
+
 <body>
     <div id="box">
         <h2>Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique labore nobis, sed facilis libero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique labore nobis, sed facilis libero.
+        </p>
         <strong>Lorem, ipsum dolor.</strong>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos eum ab qui laudantium cupiditate odio perferendis iure! Officiis iste voluptatibus ut esse! Facilis, pariatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos eum ab qui laudantium cupiditate odio
+            perferendis iure! Officiis iste voluptatibus ut esse! Facilis, pariatur?</p>
         <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque molestias soluta architecto aperiam libero dolorem necessitatibus aspernatur voluptatibus ex repudiandae!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque molestias soluta architecto aperiam libero
+            dolorem necessitatibus aspernatur voluptatibus ex repudiandae!</p>
     </div>
     <button type="button" id="wrapAllBtn">wrapAll</button>
     <button type="button" id="wrapInnerBtn">wrapInner</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#wrapAllBtn').click(function (e) { 
+            $('#wrapAllBtn').click(function (e) {
                 e.preventDefault();
                 $('P').wrapAll('<span id="wrapAll"></span>');
             });
-            $('#wrapInnerBtn').click(function (e) { 
+            $('#wrapInnerBtn').click(function (e) {
                 e.preventDefault();
                 $('h2').wrapInner('<span id="wrapInner"></span>');
             });
         });
     </script>
 </body>
+
 </html>
