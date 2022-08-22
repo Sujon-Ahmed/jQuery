@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position & Offset</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        #box {
+            width: 500px;
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: mediumaquamarine;
+            position: relative;
+        }
+        button {
+            margin-top: 20px;
+            width: 120px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Jquery Position & Offset</h2>
+    <details>
+        <summary>Position</summary>
+        <p>Position : relative to it's parents element</p>
+    </details>
+    <details>
+        <summary>Offset</summary>
+        <p>Offset : relative to the document</p>
+    </details>
+
+    <div id="box">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ex quisquam aspernatur atque esse, ab facilis est aperiam totam maiores temporibus. Quo quae sed reprehenderit.</p>
+    </div>
+    <div id="display">
+        <h2 id="topPosition"></h2>
+        <h2 id="leftPosition"></h2>
+        <h2 id="topOffset"></h2>
+        <h2 id="leftOffset"></h2>
+    </div>
+    <button id="positionBtn">Position</button>
+    <button id="offsetBtn">Offset</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#positionBtn').click(function (e) { 
+                e.preventDefault();
+                var x = $('#box h2').position();
+                $('#topPosition').html(`Top Position: ${x.top}`);
+                $('#leftPosition').html(`Left Position: ${x.left}`);
+            });
+            $('#offsetBtn').click(function (e) { 
+                e.preventDefault();
+                var x = $('#box h2').offset();
+                $('#topOffset').html(`Top Offset: ${x.top}`);
+                $('#leftOffset').html(`Left Offset: ${x.left}`);
+            });
+        });
+    </script>
+</body>
+</html>
