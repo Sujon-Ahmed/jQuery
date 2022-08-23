@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideUp slideDown slideToggle</title>    
+    <style>
+        * {
+            transition: all 0.3s ease-in-out;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #box {
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: yellowgreen;
+        }
+        button {
+            margin-top: 20px;
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>      
+</head>
+<body>
+    <div id="box">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum corrupti numquam eligendi ipsum odit reprehenderit fugit neque veniam maxime tempora.</p>
+    </div>
+    <button type="button" id="slideUp">slideUP</button>
+    <button type="button" id="slideDown">slideDown</button>
+    <button type="button" id="slideToggle">slideToggle</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#slideUp').click(function (e) { 
+                e.preventDefault();
+                $('#box').slideUp(2000);
+            });
+            $('#slideDown').click(function (e) { 
+                e.preventDefault();
+                $('#box').slideDown(2000);
+            });
+            $('#slideToggle').click(function (e) { 
+                e.preventDefault();
+                $('#box').slideToggle(2000);
+            });
+        });
+    </script>
+</body>
+</html>
