@@ -24,7 +24,7 @@
             position: relative;
             text-transform: capitalize;
         }
-        #animateBtn {
+        button {
             margin: 20px;
             width: 120px;
             height: 30px;
@@ -36,15 +36,19 @@
         <h4>animate box</h4>
     </div>
     <button type="button" id="animateBtn">Animate</button>
+    <button type="button" id="stopBtn">Stop</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
         $(document).ready(function () {
             $('#animateBtn').click(function (e) { 
                 e.preventDefault();
-                $('#box').animate({left: '500px'});
-                $('#box').animate({top: '200px'});
-                $('#box').animate({width: '700px', fontSize: '40px'}, 2000);
+                $('#box').animate({left: '500px'}, 3000);
+                $('#box').animate({fontSize: '20px'}, 2000);
+            });
+            $('#stopBtn').click(function (e) { 
+                e.preventDefault();
+                $('#box').stop(true, true); // $(selector).stop(stopAll,goToEnd);
             });
         });
     </script>
