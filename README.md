@@ -14,6 +14,7 @@ In this repository i will practice jQuery Basics, Events, Effects, HTML, Travers
 - [Window Events](#window-events)
 - [Get Method](#get-method)
 - [Class Methods](#class-methods)
+- [Jquery Traversing](#jquery-traversing)
 
 ## What is jQuery?
 
@@ -37,6 +38,7 @@ The jQuery library contains the following features:
 </ul>
 
 ### Google CDN
+
 <code>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</code>
 
 ### Basic Syntax
@@ -271,6 +273,7 @@ The jQuery library contains the following features:
 </table>
 
 ### Class Methods
+
 <table>
     <thead>
         <tr>
@@ -297,3 +300,23 @@ The jQuery library contains the following features:
         </tr>
     </tbody>
 </table>
+
+### Jquery-Traversing
+
+jQuery traversing, which means "move through", are used to "find" (or select) HTML elements based on their relation to other elements. Start with one selection and move through that selection until you reach the elements you desire.
+
+The image below illustrates an HTML page as a tree (DOM tree). With jQuery traversing, you can easily move up (ancestors), down (descendants) and sideways (siblings) in the tree, starting from the selected (current) element. This movement is called traversing - or moving through - the DOM tree.
+
+<img src="./dom-tree.PNG" alt="dom-tree">
+
+### Traversing Up the DOM Tree
+
+Three useful jQuery methods for traversing up the DOM tree are:
+
+<ul>
+<li>parent()</li>
+<li>parents()</li>
+<li>parentsUntil()</li>
+<li>closest()</li>
+<li>parentsUntil()</li>
+</ul>
