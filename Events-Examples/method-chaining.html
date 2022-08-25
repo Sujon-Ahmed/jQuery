@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            border: 3px solid yellow;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-transform: capitalize;
+        }
+
+        button {
+            margin: 20px;
+            width: 120px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h4>animate box</h4>
+    </div>
+    <button type="button" id="animateBtn">Animate</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#animateBtn').click(function (e) { 
+                e.preventDefault();
+                $('#box').css('background-color','yellow').slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
