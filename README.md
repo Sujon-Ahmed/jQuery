@@ -312,11 +312,18 @@ The image below illustrates an HTML page as a tree (DOM tree). With jQuery trave
 ### Traversing Up the DOM Tree
 
 Three useful jQuery methods for traversing up the DOM tree are:
-
+#### jQuery Traversing - Ancestors
 <ul>
 <li>parent()</li>
 <li>parents()</li>
 <li>parentsUntil()</li>
 <li>closest()</li>
 <li>parentsUntil()</li>
+</ul>
+
+#### jQuery Traversing - Descendants
+
+<ul>
+<li>children()</li>
+<li>find()</li>
 </ul>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery Traversing Ancestors</title>
+    <title>Jquery Traversing</title>
     <style>
         .ancestors * {
             display: block;
@@ -28,13 +28,14 @@
         <div style="width:500px;">div (grandparent)
             <p>p (direct parent)
                 <span>span</span>
+                <span class="spa">span</span>
             </p>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("span").offsetParent().css({ "color": "red", "border": "2px solid red" });
+            $("div").children('*').css({ "color": "red", "border": "2px solid red" });
         });
     </script>
 </body>
