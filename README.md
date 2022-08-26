@@ -318,7 +318,6 @@ Three useful jQuery methods for traversing up the DOM tree are:
 <li>parents()</li>
 <li>parentsUntil()</li>
 <li>closest()</li>
-<li>parentsUntil()</li>
 </ul>
 
 #### jQuery Traversing - Descendants
@@ -326,4 +325,15 @@ Three useful jQuery methods for traversing up the DOM tree are:
 <ul>
 <li>children()</li>
 <li>find()</li>
+</ul>
+
+#### jQuery Traversing - Descendants
+<ul>
+<li>siblings()</li>
+<li>next()</li>
+<li>nextAll()</li>
+<li>nextUntil()</li>
+<li>prev()</li>
+<li>prevAll()</li>
+<li>prevUntil()</li>
 </ul>

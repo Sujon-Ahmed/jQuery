@@ -22,20 +22,24 @@
                 <li>li (direct parent)
                     <span>span</span>
                 </li>
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
             </ul>
         </div>
     
         <div style="width:500px;">div (grandparent)
             <p>p (direct parent)
                 <span>span</span>
-                <span class="spa">span</span>
+                <span class="span1">span1</span>
+                <span class="span2">span2</span>
             </p>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("div").children('*').css({ "color": "red", "border": "2px solid red" });
+            $(".span2").prevUntil().css({ "color": "red", "border": "2px solid red" });
         });
     </script>
 </body>
