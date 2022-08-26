@@ -327,7 +327,7 @@ Three useful jQuery methods for traversing up the DOM tree are:
 <li>find()</li>
 </ul>
 
-#### jQuery Traversing - Descendants
+#### jQuery Traversing - Siblings
 <ul>
 <li>siblings()</li>
 <li>next()</li>
@@ -336,4 +336,13 @@ Three useful jQuery methods for traversing up the DOM tree are:
 <li>prev()</li>
 <li>prevAll()</li>
 <li>prevUntil()</li>
+</ul>
+
+#### jQuery Traversing - Filtering
+<ul>
+<li>first()</li>
+<li>last()</li>
+<li>eq()</li>
+<li>filter()</li>
+<li>not()</li>
 </ul>

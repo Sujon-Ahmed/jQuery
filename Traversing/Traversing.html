@@ -28,7 +28,7 @@
             </ul>
         </div>
     
-        <div style="width:500px;">div (grandparent)
+        <div style="width:500px;" class="second-div">div (grandparent)
             <p>p (direct parent)
                 <span>span</span>
                 <span class="span1">span1</span>
@@ -39,7 +39,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".span2").prevUntil().css({ "color": "red", "border": "2px solid red" });
+            $(".second-div span").not('.span1').css({ "color": "red", "border": "2px solid red" });
         });
     </script>
 </body>
