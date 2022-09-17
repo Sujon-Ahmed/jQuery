@@ -46,11 +46,14 @@
                 },
                 'mouseleave': function () {
                     $(this).css('background-color', 'red');
+                },
+                'dblclick': function() {
+                    $(this).css('background-color', 'black');
                 }
             });
             $('#removeEvent').click(function (e) { 
                 e.preventDefault();
-                 $('#box').off('mouseover mouseleave');
+                 $('#box').off('mouseover mouseleave dblclick');
             });           
         });
     </script>
