@@ -28,74 +28,41 @@ jQuery also simplifies a lot of the complicated things from JavaScript, like AJA
 
 The jQuery library contains the following features:
 
-<ul>
-    <li>HTML/DOM manipulation</li>
-    <li>CSS manipulation</li>
-    <li>HTML event methods</li>
-    <li>Effects and animations</li>
-    <li>AJAX</li>
-    <li>Utilities</li>
-</ul>
+
+- HTML/DOM manipulation
+- CSS manipulation
+- HTML event methods
+- Effects and animations
+- AJAX
+- Utilities
+
 
 ### Google CDN
-
-<code>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</code>
+```
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+```
 
 ### Basic Syntax
 
-<pre>
-<code>
-    $(document).ready(function(){
+```
+$(document).ready(function(){
 
-        // jQuery methods go here...
+    // jQuery methods go here...
 
-    });
-</code>
-</pre>
+});
+```
 
 ### Advance Selectors
 
-<table>
-    <thead>
-        <tr>
-            <th>SL</th>
-            <th>Selector</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>$("*")</td>
-            <td>"*" is a universal operator</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>$("ul li")</td>
-            <td>Here ul is parent and li is child </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>$(".abc, .xyz")</td>
-            <td>Multiple Classes</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>$("h1, div, p")</td>
-            <td>Multiple Tags</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>$("p:first")</td>
-            <td>Page first p element</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>$("p:last")</td>
-            <td>Page last p element</td>
-        </tr>
-    </tbody>
-</table>
+| SL | Selector         | Description                           |
+|----|------------------|---------------------------------------|
+| 1  | $(*)             |    `*` is a universal operator        |
+| 2  | $("ul li")       |    Here ul is parent and li is child  |
+| 3  | $(".abc, .xyz")  |   Multiple Classes                    |
+| 4  | $("h1, div, p")  |    Multiple Tags                      |
+| 5  | $("p:first")     |    Page first p element               |
+| 6  | $("p:last")      |    Page last p element                |
+
 
 ### Mouse Events
 
